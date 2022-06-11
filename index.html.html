@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <style>
+     body {
+          background-image:url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+          background-repeat: no-repeat;
+          background-size:cover;
+          background-attachment: fixed;
+      }
+      .container {
+        margin: 0cm;
+        padding:0cm;
+        border-bottom: 0cm;
+      }
+      .div{
+      height:100vh;
+      position:relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin:auto;
+      }
+    #header {
+      font-family: "Courier New", Courier, monospace;
+      color:whitesmoke;
+      margin:30px auto;
+      width:480px;
+      height:100px;
+    }
+    #survey-form {
+      font-size:22  px;
+      border-bottom-style: none;
+      padding: 30px 30px 10px 30px;
+      background-color: rgb(240, 240, 228);
+      border-radius: 1%;
+      opacity: 0.85;
+      color:black;
+      font-weight: bold;
+      width:30em;
+      margin:0 auto;
+      height:50em;
+    }
+    #submit {
+      background-color: rgb(59, 151, 59);
+      color:whitesmoke;
+      height:5vh;
+      width:25vw;
+      border-style:none;
+    }
+   textarea {
+     margin-top:10px;
+     height:15vh;
+     width:25vw;
+     resize:vertical;
+   }
+   #number, #dropdown, #name, #email{
+   margin-bottom: 5px;
+   height:2.5vh;
+   width:25vw;
+   }
+  </style>
+  <head>
+    <title>Survey Form Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+      <h1>freeCodeCamp Survey Form</h1>
+     <figcaption class="figure">
+      Thank you for taking the time to help us improve the platform</figcaption></div>
+        <form id="survey-form">
+            <label id="name-label" >
+              <div class="mor">Name
+              </div>
+             <input type="text" id="name" placeholder="Enter your name" required />
+             </label>
+             <label id="email-label">
+              <div>Email
+              </div>
+              <input type="email" id="email" placeholder="Enter your email" required/>
+             </label>
+             <label id="number-label">
+              <div>Age(optional)
+              </div>
+              <input type="number" id="number" min="18" max="100" placeholder="Age" required/>
+             </label>
+             <label>
+              <div>
+               <div>Which option best describes your current role?
+               </div>
+               <select id="dropdown">
+                 <option>select current role
+                 </option>
+                 <option>Student
+                 </option>
+                 <option>Full time job
+                  </option>
+                  <option>Full time learner
+                  </option>
+                  <option>Prefer not to say
+                  </option>
+                  <option>Other
+                  </option>
+               </select
+              </div>
+            </label>
+           <div>Would you recommend freeCodeCamp to a friend?
+           </div>
+           <div>
+            <input type="radio" value="for sure" name="recommendation"/>
+            Definetely
+           </div>
+           <div>
+            <input type="radio" value="possibly" name="recommendation" />
+            Maybe
+           </div>
+           <div>
+            <input type="radio" value="unsure" name="recommendation" />
+            Not sure
+           </div>
+           <div>
+            <p >What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" value="Front-end" id="F-end"/>
+            Front-end Projects
+           </div>
+           <div>
+            <input type="checkbox" value="Back-end" id="B-end"/>
+            Back-end Projects
+           </div>
+           <div>
+            <input type="checkbox" value="Data" id="Data-V"/>
+            Data Visualization
+           </div>
+           <div>
+            <input type="checkbox" value="Challenges" id="Challenges"/>
+            Challenges
+           </div>
+           <div>
+            <input type="checkbox" value="OP-Community" id="OpenSource-C"/>
+            Open Source Community
+           </div>
+           <div>
+            <input type="checkbox" value="GH-rooms" id="Giheroo"/>
+            Gitter help rooms
+           </div>
+           <div>
+            <input type="checkbox" value="Vids" id="Vs"/>
+            Videos
+           </div>
+           <div>
+            <input type="checkbox" value="CT-meetups" id="CTM"/>
+            City Meetups
+           </div>
+           <div>
+            <input type="checkbox" value="Weaky" id="Wk"/>
+            Wiki
+           </div>
+           <div>
+            <input type="checkbox" value="Frm" id="ForUm"/>
+            Forum
+           </div>
+           <div>
+            <input type="checkbox" value="Ad C" id="AD-courses"/>
+            Additional Courses
+           </div>
+           <div class="textA">
+            Any comments or suggestions?
+           </div>
+           <div>  
+            <textarea placeholder="enter your comment here..."></textarea>
+           </div>
+           <div>
+            <button type="submit" id="submit">
+              submit
+            </button>
+           </div>
+    </form>
+  </div>
+  </body>
+</html>
